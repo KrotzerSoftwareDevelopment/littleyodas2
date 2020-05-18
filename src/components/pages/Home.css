@@ -1,0 +1,198 @@
+.background {
+    min-height: 100vh;
+    padding-top: 50px;
+    background: fixed;
+    background-image: url("/bg1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+ }
+ .bg{
+    background-color: forestgreen;
+    padding-left: 2vw;
+    padding-right: 6vw;
+    padding-top: 2vh;
+    padding-bottom: 5vw;
+    
+ }
+.cardContainer{
+   margin-top: 2vw;
+   margin-left: 2vw;
+   margin-right: 2vw;  
+   margin-bottom: 5vw;
+}
+
+ /* styling for Navi */
+ #logo{
+   width: 6vw;
+   height: 12vh;
+}
+
+ #navifontLogo{
+   font-family: OldLondon, Arial, Helvetica, sans-serif;
+
+ }
+
+.RegNavi{
+   display:inline-block;
+}
+
+.Reg{
+   height: 20vh;
+   width: 80vw;
+}
+.RegCard{
+   text-align: center;
+}
+.CardInput{
+   align-self: center;
+}
+.fill{
+   height: 100%;
+   width: 100%;
+}
+/* styling for About */
+.About{
+   background-color: forestgreen;
+   display: inline-block;
+   text-align: center;
+   padding: 1vw;
+   margin-top: 2vw;
+   margin-left: 12vw;
+   margin-right: 8vw;
+}
+/* styling for account login modal */
+.accountModal{
+   background-color: #696969;
+}
+ /* styling for puppies page */
+ #puppiesPage{
+    padding: 2vw;
+ }
+
+ #jumboImg{
+    background-image: url("../assets/he/riverBridge.jpg");
+   
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 7vh;
+ }
+#harley{
+   width: 25vw;
+   height: 45vh;
+   margin-top: 2vh;
+  margin-left: 3vw;
+  margin-right: 4vw;
+  margin-bottom: 2vh;
+}
+.firstpuppytextcard{
+  text-align: left;
+}
+
+#missredModal{
+   width: 30vw;
+   height: 40vh;
+}
+.harleyPuppyInfo{
+background-color: forestgreen;
+margin-top: 1vh;
+margin-left: 0vw;
+margin-right: 0vw;
+margin-bottom: 1vh;
+}
+#mrWhiteModal{
+   width: 30vw;
+   height: 40vh;
+}
+.mrWhiteimage{
+   width: 30vw;
+   height: 40vh;
+}
+#mrWhiteCard{
+   width: 25vw;
+   height: 45vh;
+   margin-top: 2vh;
+  margin-left: 3vw;
+  margin-right: 4vw;
+  margin-bottom: 2vh;
+  color: blue;
+}
+#MrBlueModal{
+   width: 30vw;
+   height: 40vh;
+}
+#mrBlueCard{
+   width: 25vw;
+   height: 45vh;
+   margin-top: 2vh;
+  margin-left: 3vw;
+  margin-right: 4vw;
+  margin-bottom: 2vh;
+  
+}
+#Daphne{
+   width: 30vw;
+   height: 40vh;
+}
+
+.PuppiesModal{
+   width: 90vw;
+   height: 90vw;
+}
+ .typeFont{
+     
+     padding-top: 225px;
+     font-family: monospace;
+     font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    
+ }
+/* styling for footer */
+ .copyrightText{
+   color:white;
+ }
+
+/* Registration card buttons */
+ .steps-form-2 {
+   display: table;
+   width: 100%;
+   position: relative; }
+.steps-form-2 .steps-row-2 {
+   display: table-row; }
+.steps-form-2 .steps-row-2:before {
+   top: 14px;
+   bottom: 0;
+   position: absolute;
+   content: " ";
+   width: 100%;
+   height: 2px;
+   background-color: #7283a7; }
+.steps-form-2 .steps-row-2 .steps-step-2 {
+   display: table-cell;
+   text-align: center;
+   position: relative; }
+.steps-form-2 .steps-row-2 .steps-step-2 p {
+   margin-top: 0.5rem; }
+.steps-form-2 .steps-row-2 .steps-step-2 button[disabled] {
+   opacity: 1 !important;
+   filter: alpha(opacity=100) !important; }
+.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
+   width: 70px;
+   height: 70px;
+   border: 2px solid #59698D;
+   background-color: white !important;
+   color: #59698D !important;
+   border-radius: 50%;
+   padding: 22px 18px 15px 18px;
+   margin-top: -22px; }
+.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2:hover {
+   border: 2px solid #4285F4;
+   color: #4285F4 !important;
+   background-color: white !important; }
+.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 .fa {
+   font-size: 1.7rem; }
+

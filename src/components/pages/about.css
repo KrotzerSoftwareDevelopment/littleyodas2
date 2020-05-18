@@ -1,0 +1,15 @@
+.portpic{
+    width: 30%;
+    height: 50%;
+    align-content: center;
+    flex-direction: column;
+}
+.portContainer{
+    text-align: center;
+}
+.pContainer{
+    text-align: center;
+    border: forestgreen;
+   border-style: ridge;
+   
+}
