@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
+import { Modal, Button, Card} from "react-bootstrap";
+import Signup from './Signup';
 import '../pages/Home.css';
 class Login extends React.Component {
+  
+
+    
     render(){
       
       
       
       return (
         
-<Card className="text-center">
-<div className="Login Modal">
+<Card className="RegCard">
+  
+
   <Card.Body>
     <Card.Title> Account Login </Card.Title>
     <label> Email:   
@@ -39,25 +45,15 @@ class Login extends React.Component {
     <br />
     Dont have an account? Signup now!
     <br />
-    <Button onClick={() => this.handleShow('Signup')}> Signup</Button>
-    <Modal 
-              show={this.state.show == 'Signup'} onHide={this.handleClose} >
-            <Modal.Header closeButton closeLabel="close window" className="ModalHeader">
-              
-              LittleYodas - Dogs Are Family
-              
-                </Modal.Header>
-              
-              <Signup />
-              
-              </Modal>
+    <Button> Signup</Button>
+    
               
   </Card.Body>
-  </div>
+
 </Card>
       ); 
     }
   }
-  
+
   
   export default Login;

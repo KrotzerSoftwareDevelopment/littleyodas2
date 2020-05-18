@@ -5,13 +5,13 @@ class RegCard1 extends Component {
     
     render(){
       return (
-        <Card>
+        <Card className="RegCard">
 
 <Card.Body>
-
-        <form className="RegCard">
+<Card.Title> Account </Card.Title>
+        
    
-    <h1>Account Information</h1>
+   
         <label> Email:   
         <input  type="text" />
         </label>
@@ -27,7 +27,7 @@ class RegCard1 extends Component {
         <Link to="/RegCard2"><Button>  Next </Button> </Link>
 
 
-        </form>
+       
   
   </Card.Body>
 </Card>

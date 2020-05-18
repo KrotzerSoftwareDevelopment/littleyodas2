@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 class RegCard2 extends Component {
     
     render(){
       return (
-        <form className="RegCard">
-    
-        <h1>Contact Information</h1>
+        <Card className="RegCard">
+<Card.Title> Contact </Card.Title>
+        <Card.Body>
         <label> First Name:   
         <input  type="text" />
         </label>
@@ -38,8 +38,9 @@ class RegCard2 extends Component {
         <br />
         <Link to="/RegCard1"><Button>  Previous </Button> </Link>
         <Link to="/RegCard3"><Button>  Next </Button> </Link>
-        </form>
-
+ 
+</Card.Body>
+</Card>
 
       ); 
     }

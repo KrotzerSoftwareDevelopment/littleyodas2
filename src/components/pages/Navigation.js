@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Tab, Tabs, useState} from "react-bootstrap";
 import Account from './Account';
+import Login from './Login';
 import Signup from './Signup';
 import '../pages/Home.css';
+import RegCard1 from './RegCard1';
+import RegCard2 from './RegCard2';
+import RegCard3 from './RegCard3';
+import RegCard4 from './RegCard4';
 
 class Navigation extends React.Component {
   constructor(props, context) {
@@ -28,8 +33,9 @@ class Navigation extends React.Component {
 
 
   render(){
-  
+    
     return (
+     
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" id="navifontLogo" ><Link to="/"><img src={logo} id="logo" /> </Link> </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,19 +46,41 @@ class Navigation extends React.Component {
             <a className="nav-item nav-link" ><Link to="/About">About</Link></a>
             <a className="nav-item nav-link" ><Link to="/Contact">Contact</Link></a>
             <a className="nav-item nav-link"  onClick={() => this.handleShow('Account')}> Account </a>
-            <Modal 
-              show={this.state.show == 'Account'} onHide={this.handleClose} 
+            
+            <Modal
+              show={this.state.show == 'Account'} onHide={this.handleClose} onLoad={this.ControlledModal}
               >
+                
               <Modal.Header closeButton closeLabel="close window">
               LittleYodas - Dogs Are Family
                 </Modal.Header>
-                <Account />
+              
+    <Tabs defaultActiveKey="login" transition={false} id="noanim-tab-example" >
+  <Tab eventKey="login" title="Login" >
+    <Login />
+  </Tab>
+  <Tab eventKey="regCard1" title="Account" className="RegTabs">
+    <RegCard1 />
+  </Tab>
+  <Tab eventKey="regCard2" title="Contact" className="RegTabs">
+    <RegCard2 />
+  </Tab>
+  <Tab eventKey="regCard3" title="Terms" className="RegTabs">
+    <RegCard3 />
+  </Tab>
+  <Tab eventKey="regCard4" title="Finish" className="RegTabs">
+    <RegCard4 />
+  </Tab>
+</Tabs>
+  
                 
                 
+
                 
               </Modal>
+              </div>
           </div>
-        </div>
+  
         
       </nav>
     ); 

@@ -8,7 +8,7 @@ import RegCard4 from './RegCard4';
 
 import '../pages/Home.css';
 class Signup extends Component {
-  
+    
     render(){
      
       return (

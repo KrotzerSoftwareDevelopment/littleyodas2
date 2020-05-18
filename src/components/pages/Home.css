@@ -33,17 +33,22 @@
    font-family: OldLondon, Arial, Helvetica, sans-serif;
 
  }
-
 .RegNavi{
    display:inline-block;
 }
 
+
+.RegModal{
+   width: 70vw;
+   height: 60vh;
+}
 .Reg{
    height: 20vh;
    width: 80vw;
 }
 .RegCard{
-   text-align: center;
+   width: 100vw;
+   height: 80vh;
 }
 .CardInput{
    align-self: center;
@@ -69,6 +74,10 @@
  /* styling for puppies page */
  #puppiesPage{
     padding: 2vw;
+ }
+ #PuppiesModal{
+    width: 70vw;
+    height: 50vh;
  }
 
  #jumboImg{

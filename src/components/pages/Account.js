@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Button, Card, Modal } from 'react-bootstrap';
 import Signup from './Signup';
+import RegCard1 from './RegCard1';
+import RegCard2 from './RegCard2';
+import RegCard3 from './RegCard3';
+import RegCard4 from './RegCard4';
 import '../pages/Home.css';
 class Account extends Component {
 

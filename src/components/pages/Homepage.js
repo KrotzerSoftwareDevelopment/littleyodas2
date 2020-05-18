@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Modal, Button, Card, CardDeck, Nav} from "react-bootstrap";
+import { Modal, Button, Card, CardDeck, Carousel, Tab, Tabs} from "react-bootstrap";
+
 import Carousels from './Carousels';
 import harley1 from '../assets/missred.jpg';
-import mrWhite from '../assets/mrWhite.jpg';
+import milo from '../assets/milo.jpg';
 import Yoda2 from '../assets/yodatruck-2.png';
-import MrBlue from '../assets/Mrblue.jpg';
+import leo from '../assets/leo.jpg';
 import PuppyRec from '../pages/PuppyRec';
 import Daphne from '../pages/Daphne';
 import Yoda from '../pages/Yoda';
@@ -34,10 +35,13 @@ class Homepage extends Component {
     this.setState({show: id});
   }
 
+
+
     render(){
       return (
         <CardDeck className="bg">
   <Card className="cardContainer">
+    {/* harley */}
     <Card.Img variant="top" src={harley1} id="harley" />
     <Card.Body>
       <Card.Title>Name: Harley
@@ -56,7 +60,7 @@ class Homepage extends Component {
       <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow('harley')}>
                 <h5>See Price and more info</h5>
               </Button>
-              <Modal  className="PuppiesModal"
+              <Modal size="lg" 
               show={this.state.show == 'harley'} onHide={this.handleClose}
               >
                 <Modal.Header closeButton closeLabel="close window">
@@ -77,7 +81,45 @@ class Homepage extends Component {
   </Card.Img>
   <Card.Body>
     <Card.Title>Harley</Card.Title>
-    <Carousels />
+
+
+    <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={harley1}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3 src="harley"></h3>
+      <p>Miss Red when she was First Born!</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={harley}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>CAption here</h3>
+      
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="holder.js/800x400?text=Third slide&bg=20232a"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>With my Siblings</h3>
+      <p>Very warm and happy.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
     
     <Card.Text>
       Some quick example text to build on the card title and make up the bulk of
@@ -88,35 +130,26 @@ class Homepage extends Component {
     <Button variant="primary"> Pay in Full </Button>
   </Card.Body>
 </Card>
+
+
                  
                  </div>
                  
             <div class="col-md-6">
-            <Card>
-  <Card.Header>
-    <Nav variant="tabs" defaultActiveKey="#first">
-      <Nav.Item>
-        <Nav.Link href="/PuppyRec">My Puppy Details</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="/PuppyPackage">Whats Inluded With Me</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link href="/MeetParents">Meet My Parents</Nav.Link>
-          
-        
-      </Nav.Item>
-    </Nav>
-  </Card.Header>
-  <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
-    <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
+            <Tabs defaultActiveKey="PuppyRec" transition={false} id="noanim-tab-example" >
+  <Tab eventKey="puppyRec" title="PuppyRec" >
+    <PuppyRec />
+  </Tab>
+  <Tab eventKey="puppyPackage" title="PuppyPackage" >
+    <PuppyPackage />
+  </Tab>
+  <Tab eventKey="meetParents" title="MeetParents" >
+    <MeetParents />
+  </Tab>
+</Tabs>
+            
 </div>
+  
 
 </div>
           </div>
@@ -129,67 +162,250 @@ class Homepage extends Component {
       <small className="text-muted">Avalible to leave our home to yours by July</small>
     </Card.Footer>
   </Card>
+
+  {/* leo */}
   <Card className="cardContainer">
-    <Card.Img variant="top" src={MrBlue} id="mrBlueCard" />
+    <Card.Img variant="top" src={leo} id="leo" />
     <Card.Body>
-      <Card.Title> Name: Milo </Card.Title>
+      <Card.Title>Name: Leo
+      </Card.Title>
+      <div className="firstpuppytextcard">
       <Card.Text>
-         
+        
         <br/>
         DOB:    05/10/2020 (1 week old)
         <br/>
         Gender: Male
-      </Card.Text>
-      <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow('red')}>
+        <br/>
+        <br/>
+
+      </Card.Text></div>
+      <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow('leo')}>
                 <h5>See Price and more info</h5>
               </Button>
-              <Modal  id="PuppiesModal"
-              show={this.state.show == 'red'} onHide={this.handleClose}
+              <Modal size="lg" 
+              show={this.state.show == 'leo'} onHide={this.handleClose}
               >
                 <Modal.Header closeButton closeLabel="close window">
-                Mr. Blue
+                Leo
                 </Modal.Header>
                 <Modal.Body>
-                  <p className='landing-page-markers you-are-here'>Mr White has the most fun out of the group
-                      
-                  </p>
-                  <img src={MrBlue} id="mrBlueModal" />
+                <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+
+                  
+                  
+                 
+                  
+                  <Card>
+  <Card.Img>
+  
+  </Card.Img>
+  <Card.Body>
+    <Card.Title>Leo</Card.Title>
+
+
+    <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={leo}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3 ></h3>
+      <p></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={leo}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>2nd Puppy Picture</h3>
+      <p>Getting bigger and stronger!.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={leo}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>With my Siblings</h3>
+      <p>Very warm and happy.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+    
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    
+    <Button variant="primary"> Make a Deposit </Button>
+    <Button variant="primary"> Pay in Full </Button>
+  </Card.Body>
+</Card>
+
+
+                 
+                 </div>
+                 
+            <div class="col-md-6">
+            <Tabs defaultActiveKey="PuppyRec" transition={false} id="noanim-tab-example" >
+  <Tab eventKey="puppyRec" title="PuppyRec" >
+    <PuppyRec />
+  </Tab>
+  <Tab eventKey="puppyPackage" title="PuppyPackage" >
+    <PuppyPackage />
+  </Tab>
+  <Tab eventKey="meetParents" title="MeetParents" >
+    <MeetParents />
+  </Tab>
+</Tabs>
+            
+</div>
+  
+
+</div>
+          </div>
+                
+                  
                 </Modal.Body>
               </Modal>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <small className="text-muted">Avalible to leave our home to yours by July</small>
     </Card.Footer>
   </Card>
+
+  {/* milo */}
   <Card className="cardContainer">
-    <Card.Img variant="top" src={mrWhite} id="mrWhiteCard" />
+    <Card.Img variant="top" src={milo} id="harley" />
     <Card.Body>
-      <Card.Title> Name: Leo </Card.Title>
+      <Card.Title>Name: Milo
+      </Card.Title>
+      <div className="firstpuppytextcard">
       <Card.Text>
+        
         <br/>
         DOB:    05/10/2020 (1 week old)
         <br/>
         Gender: Male
-      </Card.Text>
-      <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow('red')}>
+        <br/>
+        <br/>
+
+      </Card.Text></div>
+      <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow('milo')}>
                 <h5>See Price and more info</h5>
               </Button>
-              <Modal  id="PuppiesModal"
-              show={this.state.show == 'red'} onHide={this.handleClose}
+              <Modal size="lg" 
+              show={this.state.show == 'milo'} onHide={this.handleClose}
               >
                 <Modal.Header closeButton closeLabel="close window">
-                Mr. White
+                milo
                 </Modal.Header>
                 <Modal.Body>
-                  <p className='landing-page-markers you-are-here'>Mr Blue has the a great little personality
-                      
-                  </p>
-                  <img src={mrWhite} id="mrWhiteModal" />
+                <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+
+                  
+                  
+                 
+                  
+                  <Card>
+  <Card.Img>
+  
+  </Card.Img>
+  <Card.Body>
+    <Card.Title>Milo</Card.Title>
+
+
+    <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={milo}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      
+      <p></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={milo}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      
+      <p>Getting bigger and stronger!.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="holder.js/800x400?text=Third slide&bg=20232a"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>With my Siblings</h3>
+      <p>Very warm and happy.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+    
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    
+    <Button variant="primary"> Make a Deposit </Button>
+    <Button variant="primary"> Pay in Full </Button>
+  </Card.Body>
+</Card>
+
+
+                 
+                 </div>
+                 
+            <div class="col-md-6">
+            <Tabs defaultActiveKey="PuppyRec" transition={false} id="noanim-tab-example" >
+  <Tab eventKey="puppyRec" title="PuppyRec" >
+    <PuppyRec />
+  </Tab>
+  <Tab eventKey="puppyPackage" title="PuppyPackage" >
+    <PuppyPackage />
+  </Tab>
+  <Tab eventKey="meetParents" title="MeetParents" >
+    <MeetParents />
+  </Tab>
+</Tabs>
+            
+</div>
+  
+
+</div>
+          </div>
+                
+                  
                 </Modal.Body>
               </Modal>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <small className="text-muted">Avalible to leave our home to yours by July</small>
     </Card.Footer>
   </Card>
 </CardDeck>

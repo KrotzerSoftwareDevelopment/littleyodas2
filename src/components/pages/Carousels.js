@@ -4,6 +4,8 @@ import '../pages/about.css';
 import '../assets/week1PuppyPics/harley.png'
 
 class Carousels extends Component {
+
+ 
     render(){
       return (
         <Carousel>
