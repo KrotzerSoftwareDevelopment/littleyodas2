@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Wed May 20 2020 12:28:34 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/pages/Home/Puppies.js
+* src/components/pages/Home/PuppiesList.js
+* src/components/pages/Home/PuppyCard.js
+* src/components/pages/Navigation/Homepage.js
+
+
+Created files:
+* .autogit/logs/log-20-4-2020-11-35-29.txt
+* src/components/pages/Home/PuppyModal.js
+
+
+Deleted files:
+
+
+Renamed files:
