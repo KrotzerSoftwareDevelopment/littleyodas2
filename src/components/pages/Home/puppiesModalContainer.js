@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import PuMInfo from './PuMInfo';
-import Card from 'react';
+import Puppy from './Puppy';
 class PuppiesModalContainer extends Component {
     render() {
         return (
-            <Card>
-                {this.props.PuMInfo.map((puppies)=> {
-                    return <PuMInfo puppies={puppies}/>
-                })
-                }
+           
+            
+            <li>
+                {this.props.puppies.map((puppy)=> {
+                    return <Puppy puppy={puppy} key={puppy.id}/>
+                })}
+                </li>
                 
-            </Card>
+          
         )
     }
 }

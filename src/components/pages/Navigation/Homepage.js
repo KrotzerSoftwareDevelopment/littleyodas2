@@ -7,13 +7,21 @@ import PuppiesModalContainer from '../Home/PuppiesModalContainer';
 import MeetParents from '../Home/Parents/MeetParents';
 
 
-let puppy = [
-  { _id: 1, name: "Harley", dob: "05/10/2020", birthtime: "03:35am", gender: "Female",championbloodlines: "yes", championsired: "yes"},
-  { _id: 1, name: "Leo", dob: "05/10/2020", birthtime: "05:5am", gender: "Female",championbloodlines: "yes", championsired: "yes"}
-]
+
 let puppies = [{
+  id: "1",
   name: 'Harley',
   gender: 'Female'
+},
+{
+  id: "2",
+  name: 'Leo',
+  gender: 'Male'
+},
+{
+  id: "3",
+  name: 'Milo',
+  gender: 'Male'
 }
 ]
 class Homepage extends Component {
