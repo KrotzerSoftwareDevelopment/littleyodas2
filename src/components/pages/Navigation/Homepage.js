@@ -6,6 +6,7 @@ import PuppyRec from '../Home/PuppyRec';
 import { puppies } from '../Home/Puppies';
 import MeetParents from '../Home/Parents/MeetParents';
 import PuppyCard from '../Home/PuppyCard';
+import PuppiesList from '../Home/PuppiesList';
 class Homepage extends Component {
   constructor(props, context) {
     super(props, context);
@@ -33,7 +34,7 @@ class Homepage extends Component {
       return (
         <CardDeck className="bg">
         
-        <PuppyCard puppies={puppies} />
+        <PuppiesList puppies={puppies} />
         
   <Card className="cardContainer">
     {/* harley */}

@@ -46,4 +46,5 @@ export const puppies = [
         }],
         status: "Available"
     }
+    
 ]
