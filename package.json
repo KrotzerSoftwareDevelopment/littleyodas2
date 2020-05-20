@@ -23,6 +23,7 @@
     "react-scripts": "^3.4.0",
     "react-sticky-footer": "0.1.0-rc3",
     "react-typing-animation": "^1.6.2",
+    "reactstrap": "^8.4.1",
     "validator": "^13.0.0",
     "webfont": "^9.0.0",
     "webfontloader": "^1.6.28"

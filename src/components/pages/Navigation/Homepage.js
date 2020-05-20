@@ -6,24 +6,6 @@ import PuppyRec from '../Home/PuppyRec';
 import PuppiesModalContainer from '../Home/PuppiesModalContainer';
 import MeetParents from '../Home/Parents/MeetParents';
 
-
-
-let puppies = [{
-  id: "1",
-  name: 'Harley',
-  gender: 'Female'
-},
-{
-  id: "2",
-  name: 'Leo',
-  gender: 'Male'
-},
-{
-  id: "3",
-  name: 'Milo',
-  gender: 'Male'
-}
-]
 class Homepage extends Component {
   constructor(props, context) {
     super(props, context);
