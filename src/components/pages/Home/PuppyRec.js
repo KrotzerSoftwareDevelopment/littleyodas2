@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class PuppyRec extends Component {
     render(){
       return (
-        <div className="harleyPuppyInfo">
+        
         <div>
        <form>
          <br/>
@@ -29,7 +29,7 @@ class PuppyRec extends Component {
          <br />
        </form>
         </div>
-        </div>
+      
 
       ); 
     }

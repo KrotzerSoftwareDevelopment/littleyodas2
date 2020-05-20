@@ -3,12 +3,19 @@ import { Modal, Button, Card, CardDeck, Carousel, Tab, Tabs} from "react-bootstr
 import{ BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import PuppyPackage from '../Home/PuppyPackage';
 import PuppyRec from '../Home/PuppyRec';
+import PuppiesModalContainer from '../Home/PuppiesModalContainer';
 import MeetParents from '../Home/Parents/MeetParents';
-const puppies = [
+
+
+let puppy = [
   { _id: 1, name: "Harley", dob: "05/10/2020", birthtime: "03:35am", gender: "Female",championbloodlines: "yes", championsired: "yes"},
   { _id: 1, name: "Leo", dob: "05/10/2020", birthtime: "05:5am", gender: "Female",championbloodlines: "yes", championsired: "yes"}
 ]
-
+let puppies = [{
+  name: 'Harley',
+  gender: 'Female'
+}
+]
 class Homepage extends Component {
   constructor(props, context) {
     super(props, context);
@@ -44,9 +51,9 @@ class Homepage extends Component {
       <Card.Text>
         
         <br/>
-        DOB:    05/10/2020 (1 week old)
+        DOB: 
         <br/>
-        Gender: Female
+        <PuppiesModalContainer puppies={this.props.puppies} />
         <br/>
         <br/>
 
