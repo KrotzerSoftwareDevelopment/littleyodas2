@@ -2,11 +2,12 @@ export const puppies = [
     {
         id: 1,
         name: 'Harley',
-        "image": '../pages/Home/leo.jpg',
+        "image": '../src/components/pages/Home/leo.jpg',
+       
         gender: 'Female',
-        dob: "05/10/2020",
-        akcreg: "yes",
-        chapblod: "yes",
+        dob: '05/10/2020',
+        akcreg: 'yes',
+        chapblod: 'yes',
         showpoten: "yes",
         birthcolor: "Brindle",
         price: [{

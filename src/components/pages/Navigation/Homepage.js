@@ -33,10 +33,9 @@ class Homepage extends Component {
       return (
         <CardDeck className="bg">
         
-        <PuppyCard id={puppies[0].id}  image={puppies[0].image} name={puppies[0].name} gender={puppies[0].gender}  />
-        <PuppyCard id={puppies[1].id} name={puppies[1].name} gender={puppies[1].gender} />
-        <PuppyCard id={puppies[2].id} name={puppies[2].name} gender={puppies[2].gender} />
-      
+        <PuppyCard id={puppies[0].id}  image={puppies[0].image} name={puppies[0].name} gender={puppies[0].gender} status={puppies[0].status} />
+        <PuppyCard id={puppies[1].id} image={puppies[1].image} name={puppies[1].name} gender={puppies[1].gender} status={puppies[1].status} />
+        <PuppyCard id={puppies[2].id} image={puppies[2].image} name={puppies[2].name} gender={puppies[2].gender} status={puppies[2].status}/>
   <Card className="cardContainer">
     {/* harley */}
     <Card.Img variant="top"  id="harley" />
