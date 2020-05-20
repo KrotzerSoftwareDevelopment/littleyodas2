@@ -33,7 +33,10 @@ class Homepage extends Component {
       
       return (
         <CardDeck className="bg">
-        <PuppyCard />
+        
+        <PuppyCard id={puppies[0].id} name={puppies[0].name} gender={puppies[0].gender} />
+        <PuppyCard id={puppies[1].id} name={puppies[1].name} gender={puppies[1].gender} />
+        <PuppyCard id={puppies[2].id} name={puppies[2].name} gender={puppies[2].gender} />
       <PuppyCard />
       <PuppyCard />
   <Card className="cardContainer">
@@ -45,12 +48,7 @@ class Homepage extends Component {
       <div className="firstpuppytextcard">
       <Card.Text>
         
-        <br/>
-        <Card id={puppies[0].id} name={puppies[0].name} gender={puppies[0].gender}/>
-            <Card id={puppies[1].id} name={puppies[1].name} gender={puppies[1].gender}/>
-            <Card id={puppies[2].id} name={puppies[2].name} gender={puppies[2].gender}/>
-
-       
+        
         
 
       </Card.Text></div>

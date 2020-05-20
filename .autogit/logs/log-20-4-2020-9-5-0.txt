@@ -1,0 +1,24 @@
+-------------------- Auto-Git Log --------------------
+		Wed May 20 2020 09:05:00 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* src/components/pages/Navigation/Homepage.js
+
+
+Created files:
+* .autogit/logs/log-20-4-2020-8-34-55.txt
+* src/components/assets/.missred.jpg.icloud
+* src/components/assets/he/.djYodaCouch.jpg.icloud
+* src/components/pages/Home/PuppyCard.js
+* src/components/pages/Home/puppycard.css
+
+
+Deleted files:
+* src/components/assets/he/djYodaCouch.jpg
+* src/components/assets/missred.jpg
+
+
+Renamed files:
