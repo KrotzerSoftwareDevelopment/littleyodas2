@@ -10,6 +10,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "link": "^0.1.5",
+    "querystring": "^0.2.0",
     "react": "^16.12.0",
     "react-accordion": "^0.1.0",
     "react-bootstrap": "^1.0.1",
