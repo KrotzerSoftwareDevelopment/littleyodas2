@@ -1,6 +1,6 @@
 export const PuppyImg = [{
     "id": 1,
-    "image" : "./leo.jpg"
+    "image": require("../Home/leo.jpg")
 },
 {
     "id": 2,

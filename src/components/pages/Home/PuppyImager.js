@@ -6,9 +6,9 @@ import { PuppyImg } from './PuppyImg';
 const PuppyImager = (props) => {
     return (
         <CardGroup>
-        
-        <img src={props.image}/>
-            
+        <Card>
+        <img src={props.src}/>
+            </Card>
         </CardGroup>
     );
 }

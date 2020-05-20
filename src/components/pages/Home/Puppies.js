@@ -2,6 +2,7 @@ export const puppies = [
     {
         id: 1,
         name: 'Harley',
+        "image": '../pages/Home/leo.jpg',
         gender: 'Female',
         dob: "05/10/2020",
         akcreg: "yes",
