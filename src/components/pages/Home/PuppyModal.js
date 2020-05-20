@@ -5,10 +5,25 @@ import { Modal, Button} from 'react-bootstrap';
 
 function PuppyModal() {
  
-const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
+    constructor(props, context) {
+        super(props, context);
+    
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+    
+        this.state = {
+          show: null
+        };
+      }
+    
+      handleClose(id) {
+        this.setState({show: id});
+      }
+    
+      handleShow(id) {
+        this.setState({show: id});
+      }
+    
   return (
     <div>
       <Button variant="primary" onClick={handleShow}>
