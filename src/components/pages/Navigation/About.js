@@ -15,13 +15,16 @@ class About extends Component {
       return (
 
 <CardDeck className="About">
+<p>hello</p>
 <br />
+<br />
+<Card>
         LittleYodas is a small breeder with all dogs living within the house.
         Around children everyday...... Explain more about little yodas and what 
         we are and what we stand for in the best light possible
-        <br />
-         {/* Diet Card */}
-  <Card>
+        
+
+ 
   <Link to="/Diet">
     <Card.Img />
     <Card.Body>
