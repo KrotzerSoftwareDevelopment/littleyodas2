@@ -6,7 +6,8 @@ import PuppyRec from '../Home/PuppyRec';
 import { puppies } from '../Home/Puppies';
 import MeetParents from '../Home/Parents/MeetParents';
 import PuppyCard from '../Home/PuppyCard';
-
+import { PuppyImg } from '../Home/PuppyImg';
+import PuppyImager from '../Home/PuppyImager';
 class Homepage extends Component {
   constructor(props, context) {
     super(props, context);
@@ -33,8 +34,8 @@ class Homepage extends Component {
       
       return (
         <CardDeck className="bg">
-        
-        <PuppyCard id={puppies[0].id} name={puppies[0].name} gender={puppies[0].gender} />
+        <PuppyImager id={PuppyImg[0].id} image={PuppyImg[0].image}/>
+        <PuppyCard id={puppies[0].id}  name={puppies[0].name} gender={puppies[0].gender}  />
         <PuppyCard id={puppies[1].id} name={puppies[1].name} gender={puppies[1].gender} />
         <PuppyCard id={puppies[2].id} name={puppies[2].name} gender={puppies[2].gender} />
       <PuppyCard />
