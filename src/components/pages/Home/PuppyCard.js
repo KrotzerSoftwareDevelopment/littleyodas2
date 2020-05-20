@@ -5,7 +5,6 @@ import {Button, Modal, Carousel, Tabs, Tab} from 'react-bootstrap';
 import PuppyRec from './PuppyRec';
 import PuppyPackage from './PuppyPackage';
 import MeetParents from '../Home/Parents/MeetParents';
-import PuppyModal from './PuppyModal';
 const PuppyCard = ({status, name, gender, price}) => {
     
     return (
@@ -25,7 +24,7 @@ const PuppyCard = ({status, name, gender, price}) => {
       </Card.Text></div>
       {status}
       {price}
-      <Button onClick={PuppyModal}></Button>
+      <Button> More Info</Button>
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">Avalible to leave our home to yours by July</small>

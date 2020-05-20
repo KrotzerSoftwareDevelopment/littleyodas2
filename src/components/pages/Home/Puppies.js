@@ -3,7 +3,7 @@ export const puppies = [
         id: 1,
         name: 'Harley',
         "image": '../src/components/pages/Home/leo.jpg',
-       
+        "modalLink": "this is a link to modal",
         gender: 'Female',
         dob: '05/10/2020',
         akcreg: 'yes',

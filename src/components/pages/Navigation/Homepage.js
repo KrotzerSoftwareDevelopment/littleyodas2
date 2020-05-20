@@ -32,10 +32,12 @@ class Homepage extends Component {
     render(){
       
       return (
+       
         <CardDeck className="bg">
-        
+         <Card>
         <PuppiesList puppies={puppies} />
         
+        </Card>
   <Card className="cardContainer">
     {/* harley */}
     <Card.Img variant="top"  id="harley" />
