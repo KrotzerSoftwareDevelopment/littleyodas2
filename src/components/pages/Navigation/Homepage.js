@@ -3,8 +3,9 @@ import { Modal, Button, Card, CardDeck, Carousel, Tab, Tabs} from "react-bootstr
 import{ BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import PuppyPackage from '../Home/PuppyPackage';
 import PuppyRec from '../Home/PuppyRec';
-import PuppiesModalContainer from '../Home/PuppiesModalContainer';
+import { puppies } from '../Home/Puppies';
 import MeetParents from '../Home/Parents/MeetParents';
+import PuppyCard from '../Home/PuppyCard';
 
 class Homepage extends Component {
   constructor(props, context) {
@@ -29,8 +30,12 @@ class Homepage extends Component {
 
 
     render(){
+      
       return (
         <CardDeck className="bg">
+        <PuppyCard />
+      <PuppyCard />
+      <PuppyCard />
   <Card className="cardContainer">
     {/* harley */}
     <Card.Img variant="top"  id="harley" />
@@ -41,11 +46,12 @@ class Homepage extends Component {
       <Card.Text>
         
         <br/>
-        DOB: 
-        <br/>
-        <PuppiesModalContainer puppies={this.props.puppies} />
-        <br/>
-        <br/>
+        <Card id={puppies[0].id} name={puppies[0].name} gender={puppies[0].gender}/>
+            <Card id={puppies[1].id} name={puppies[1].name} gender={puppies[1].gender}/>
+            <Card id={puppies[2].id} name={puppies[2].name} gender={puppies[2].gender}/>
+
+       
+        
 
       </Card.Text></div>
       <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow('harley')}>
