@@ -8,12 +8,12 @@ class Diet extends Component {
       return (
 
 <CardDeck className="AboutDiet">
-<br />
+<Card>
         LittleYodas is a small breeder with all dogs living within the house.
         Around children everyday...... Explain more about little yodas and what 
         we are and what we stand for in the best light possible
-        <br />
-  <Card>
+        
+
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
       <Card.Title>Treats I use to train</Card.Title>

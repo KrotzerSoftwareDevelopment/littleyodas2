@@ -62,7 +62,7 @@ class Account extends Component {
     <br />
     <Button onClick={() => this.handleShow('Signup')}> Signup</Button>
     <Modal 
-              show={this.state.show == 'Signup'} onHide={this.handleClose} >
+              show={this.state.show === 'Signup'} onHide={this.handleClose} >
             <Modal.Header closeButton closeLabel="close window" className="ModalHeader">
               
               LittleYodas - Dogs Are Family

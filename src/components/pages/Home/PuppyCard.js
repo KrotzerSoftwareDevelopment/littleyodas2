@@ -7,7 +7,7 @@ import MeetParents from '../Home/Parents/MeetParents';
 const PuppyCard = ({status, name, gender, price}) => {
     
     return (
-        <CardDeck className="ModalStyle">
+        <CardDeck className="card-btm">
         
         <Card>
  
@@ -29,8 +29,10 @@ const PuppyCard = ({status, name, gender, price}) => {
     <Card.Footer>
       <small className="text-muted">Avalible to leave our home to yours by July</small>
     </Card.Footer>
-    </Card>
     
+    </Card>
+    <div className="card-btm">
+    </div>
 </CardDeck>
 
     );
